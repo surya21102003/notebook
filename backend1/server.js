@@ -10,7 +10,7 @@ const app = express();
 app.use(cors({
 origin:"https://app-cdd9.onrender.com",
     methods:"GET,POST,PUT,DELETE",
-    credentials:true;
+    credentials:true
 }));
 app.use(express.json());
 
@@ -22,4 +22,5 @@ app.use('/api/auth', authRoutes);
 app.use('/api/notes', notesRoutes);
 
 app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`));
+
 
