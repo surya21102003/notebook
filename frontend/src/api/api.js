@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://notebook-9r5g.onrender.com/api',
+    baseURL: 'https://appserver-tnuv.onrender.com/api',
 });
 
 api.interceptors.request.use(config => {
@@ -11,4 +11,5 @@ api.interceptors.request.use(config => {
 });
 
 export default api;
+
 
